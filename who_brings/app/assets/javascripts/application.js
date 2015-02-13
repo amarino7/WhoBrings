@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require responsiveslide
+//= require jquery-ui.min
 //= require turbolinks
 //= require_tree .
+
