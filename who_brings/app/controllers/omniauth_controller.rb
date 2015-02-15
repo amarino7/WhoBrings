@@ -8,5 +8,10 @@ class OmniauthController < ApplicationController
 
     # Redirect
     redirect_to root_url, notice: "You logged in!"
+
+    def destroy
+	  	logout()
+	  	redirect_to root_path
+	  end
 	end
 end
