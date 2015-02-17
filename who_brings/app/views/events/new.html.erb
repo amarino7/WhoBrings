@@ -1,0 +1,23 @@
+<%= form_for @event do |f| %>
+          <div>
+          Event Title: <%= f.text_field :title %>
+          </div>
+          <div>
+           Description: <%= f.text_field :description %>
+          </div>
+          <div>
+           Start Date:  <%= f.date_field :date %>
+          </div>
+          <div>
+            End Date: <%= f.date_field :date %>
+          </div>
+          <div>
+            Time Begin: <%= f.time_field :time %>
+          </div>
+          <div>
+            Time End: <%= f.time_field :time %>
+          </div>
+          <div>
+            <%= f.submit %>
+          </div>
+      <% end %>

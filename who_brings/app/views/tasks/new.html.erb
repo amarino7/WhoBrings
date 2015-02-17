@@ -1,0 +1,9 @@
+<%= form_for @task do |f| %>
+
+	<%= f.text_field :content, placeholder: "Task" %>
+	<%= f.text_field :user_id, placeholder: "Who's Bringing What" %>
+	<%= f.text_field :cost, placeholder: "Cost" %>
+	<%= f.check_box :complete %>
+	<%= f.submit "save task" %>
+
+<% end %>

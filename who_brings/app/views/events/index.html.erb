@@ -1,0 +1,17 @@
+<h1>Events</h1>
+
+<ul>
+	<% @events.each do |event| %>
+	<li>
+		<div>Title: <%=event.title%>
+		</div>
+		<div>Description: <%=event.description%>
+		</div>
+		<div>Date: <%=event.date%>
+		</div>
+		<div>Time: <%=event.time%>
+		</div>
+	<%= button_to "Delete", destroy_event_path(@user, event), method: :delete %>
+	</li>
+	<% end %>
+</ul>

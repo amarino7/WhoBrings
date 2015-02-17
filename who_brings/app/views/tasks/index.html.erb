@@ -1,0 +1,15 @@
+<h1>tasks</h1>
+
+<ul>
+	<% @tasks.each do |task| %>
+	<li>
+		<div>Content: <%=task.content%>
+		</div>
+		<div>Who's bringing what: <%=task.user_id%>
+		</div>
+		<div>Cost: <%=task.cost%>
+		</div>
+	<%= button_to "Delete", destroy_task_path(@user, task), method: :delete %>
+	</li>
+	<% end %>
+</ul>
