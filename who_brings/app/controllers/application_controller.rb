@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
 
   ENV['facebook_app_id']
   include SessionsHelper
+  include OmniauthHelper
   
   private
 	  def authorized_user?

@@ -4,7 +4,7 @@ class TasksController < ApplicationController
 
 	def index
 		@tasks = @event.tasks.all
-		
+
 		# user_id = params[:user_id]
 		# @user = User.find(user_id)
 		# render :index
@@ -24,7 +24,7 @@ class TasksController < ApplicationController
 		@task = @event.tasks.create(new_task)
 		respond_to do |format|
 			# format.html { redirect_to "/users/#{@user.id}/tasks/#{task.id}" }
-			format.html { redirect_to "/events/#{@event.id}/tasks/#{@task.id}" }
+			format.html { redirect_to "/events/#{@event.id}/tasks" }
 			format.json { render json: @task }
 		end
 	end
@@ -47,12 +47,12 @@ class TasksController < ApplicationController
 	def update
 		task_id = params[:task_id]
 		task = @event.tasks.find(task_id)
-		updated_attrs = params.require(:task).permit(:content, :complete)
+		updated_attrs = params.require(:task).permit(:content, :user_id, :cost, :complete)
 		task.update_attributes(updated_attrs)
 		# redirect_to task_path
 
 		respond_to do |format|
-			format.html
+			format.html { redirect_to "/events/#{@event.id}/tasks" }
 			format.json { render json: @tasks }
 		end
 	end
@@ -63,7 +63,7 @@ class TasksController < ApplicationController
 		task.destroy
 
 		respond_to do |format|
-			format.html
+			format.html { redirect_to "/events/#{@event.id}/tasks" }
 			format.json { render json: @tasks }
 		end
 	end

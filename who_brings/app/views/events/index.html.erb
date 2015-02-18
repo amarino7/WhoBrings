@@ -1,3 +1,5 @@
+<%= render "layouts/navbar" %>
+
 <h1>Events</h1>
 
 <ul>
@@ -15,7 +17,7 @@
 		</div>
 		<div>End Time: <%=event.end_time%>
 		</div>
-		<%= link_to "Create New Task List", "/events/#{event.id}/tasks/new" %>
+		<%= link_to "Create New Task List", "/events/#{event.id}/tasks/new" %> <br>
 		<%= link_to "Current Task List", "/events/#{event.id}/tasks" %>
 	</li>
 	<% end %>

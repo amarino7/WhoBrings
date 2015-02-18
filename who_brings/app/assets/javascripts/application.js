@@ -22,6 +22,7 @@ $(function() {
     $( "#sortable" ).disableSelection();
   });
 
+
 // $(function () {
 // var userId = window.location.pathname.split('/')[2];
 // var usersTasksURL = "/users/"+ userId + "/tasks.json";

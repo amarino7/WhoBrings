@@ -7,7 +7,7 @@ class OmniauthController < ApplicationController
     session[:user_id] = user.id
 
     # Redirect
-    redirect_to root_url, notice: "You logged in!"
+    redirect_to "/users", notice: "You logged in!"
 
     def destroy
 	  	logout()

@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   get "/events/:event_id/tasks/:task_id/edit", to: "tasks#edit", as: "edit_task"
 
   post "/events/:event_id/tasks", to: "tasks#create"
-  patch "/events/:event_id/tasks/:task_id", to: "tasks#update"
+  post "/events/:event_id/tasks/:task_id", to: "tasks#update", as: "task_update"
   delete "/events/:event_id/tasks/:task_id", to: "tasks#destroy", as: "destroy_task"
 
   # get "/users/:user_id/tasks", to: "tasks#index", as: "tasks"

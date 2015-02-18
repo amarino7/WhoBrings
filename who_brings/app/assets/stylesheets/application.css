@@ -22,8 +22,16 @@
 	text-align: center;
 }
 
-.task_table_head {
+.rslides {
+	position: relative;
+}
+
+th {
 	text-align: center;
+}
+
+.button_to {
+	display: inline-block;
 }
 
 #sortable { list-style-type: none; width: 100%; }
@@ -33,5 +41,41 @@
 #sortable li span { position: absolute}
 
 .new_task_inner_container {
-	
+
 }
+
+.homepage_images_container {
+	position: relative;
+}
+
+.homepage_text_container {
+	position: absolute;
+	top: 0;
+	/*left: 0;*/
+	margin-top: 200px;
+	text-align: center;
+	width: 100%;
+	z-index: 3;
+	font-size: 80px;
+	font-family: tangerine;
+	color: white;
+}
+
+.homepage_lower_bar_container {
+	width: 100%;
+	height: 100px;
+	margin-top: 500px;
+	background-color: RGBA(63, 63, 63, .75);
+	position: absolute;
+	top:	0;
+	z-index: 3;
+}
+
+.homepage_lower_bar_writing {
+	color: white;
+	text-align: center;
+	font-size: 40px;
+	padding: 2 0px;
+}
+
+
