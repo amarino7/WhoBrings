@@ -1,6 +1,7 @@
 <div>
 	<%= @task.content %><br>
+	<%= @task.user_id %><br>
+	<%= @task.cost %><br>
 	<%= @task.complete %><br>
-	<%= @task.created_at %><br>
-	<%= button_to "Delete", destroy_task_path(@user, @task), method: :delete %>
+	<%= button_to "Delete", destroy_task_path(@event , @task), method: :delete %>
 </div>

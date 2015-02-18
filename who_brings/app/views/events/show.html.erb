@@ -1,7 +1,9 @@
 <div>
 	<%= @event.title %><br>
 	<%= @event.description %><br>
-	<%= @event.date %><br>
-	<%= @event.time %><br>
+	<%= @event.start_date %><br>
+	<%= @event.end_date %><br>
+	<%= @event.start_time %><br>
+	<%= @event.end_time %><br>
 	<%= button_to "Delete", destroy_task_path(@user, @event), method: :delete %>
 </div>

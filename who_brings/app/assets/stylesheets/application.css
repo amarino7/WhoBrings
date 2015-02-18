@@ -18,3 +18,20 @@
  *= require_self
  */
 
+.tasks_main_container {
+	text-align: center;
+}
+
+.task_table_head {
+	text-align: center;
+}
+
+#sortable { list-style-type: none; width: 100%; }
+  /*#sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+  #sortable li span { position: absolute; margin-left: -1.3em; }*/
+#sortable li {font-size: 1.4em; height: 18px; }
+#sortable li span { position: absolute}
+
+.new_task_inner_container {
+	
+}

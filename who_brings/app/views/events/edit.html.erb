@@ -1,0 +1,64 @@
+<!-- <div class="task_main_container">
+	<div class="task_form_container">
+		<h1>tasks</h1>
+		<div class="row">
+			<ul id="sortable">
+				<% @tasks.each do |task| %>
+				<li class="col-xs-3">
+					<div>Content: <%=task.content%>
+					</div>
+				</li>
+				<li class"col-xs-3">
+					<div>Who's bringing what: <%=task.user_id%>
+					</div>
+				</li>
+				<li class"col-xs-3">
+					<div>Cost: <%=task.cost%>
+					</div>
+				</li>
+				<%= button_to "Delete", destroy_task_path(@event, task), method: :delete %>
+				</li>
+				# <% end %>
+			</ul>
+		</div>
+	</div>
+</div> -->
+
+<!-- <div class="task_main_container">
+	<div class="task_form_container">
+		<h1>tasks</h1>
+		<div class="row">
+			<div class="task_content">Content
+				<ul id="sortable" class="col-xs-3">
+					<% @tasks.each do |task| %>
+					<li class="col-xs-3">
+						<div><%=task.content%>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="task_whobrings">Who
+				<ul id="sortable" class="col-xs-3">
+					<% @tasks.each do |task| %>
+					<li class="col-xs-3">
+						<div><%=task.user_id%>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="task_cost">Cost
+				<ul id="sortable" class="col-xs-3">
+					<% @tasks.each do |task| %>
+					<li class="col-xs-3">
+						<div>Cost: <%=task.cost%>
+						</div>
+					</li>
+				</ul>
+			</div>
+				<%= button_to "Delete", destroy_task_path(@event, task), method: :delete %>
+				<% end %>
+		</div>
+	</div>
+</div> -->
