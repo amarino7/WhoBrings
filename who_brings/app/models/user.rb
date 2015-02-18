@@ -12,6 +12,7 @@ class User < ActiveRecord::Base
   	where(uid: auth.uid).first_or_initialize.tap do |user|
 	    user.provider = auth.provider
 	    # user.profile_image = auth.info.image
+	    user.image = auth.info.image
 	    user.uid = auth.uid
 	    user.name = auth.info.name
 	    user.oauth_token = auth.credentials.token

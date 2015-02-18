@@ -16,9 +16,11 @@
  *= require jquery-ui.theme.min
  *= require_tree .
  *= require_self
+ *= require rails_bootstrap_forms
  */
 
 .tasks_main_container {
+	margin-top: 60px;
 	text-align: center;
 }
 
@@ -41,7 +43,8 @@ th {
 #sortable li span { position: absolute}
 
 .new_task_inner_container {
-
+	margin-top: 60px;
+	margin-left: 20px;
 }
 
 .homepage_images_container {
@@ -76,6 +79,26 @@ th {
 	text-align: center;
 	font-size: 40px;
 	padding: 2 0px;
+}
+
+.events__main_container {
+	margin-top: 60px;
+	margin-left: 20px;
+}
+
+.edit_task_main_container {
+	margin-top: 60px;
+	margin-left: 20px;
+}
+
+.about_main_container {
+	margin-top: 60px;
+	margin-left: 20px;
+}
+
+.users_homepage_main_container {
+	margin-top: 60px;
+	margin-left: 20px;
 }
 
 

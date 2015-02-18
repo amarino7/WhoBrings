@@ -5,6 +5,9 @@ class TasksController < ApplicationController
 	def index
 		@tasks = @event.tasks.all
 
+		
+
+		# @task.find(task_id).user.name
 		# user_id = params[:user_id]
 		# @user = User.find(user_id)
 		# render :index
